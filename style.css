@@ -1,0 +1,146 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    background: color black;
+}
+
+
+h1 {
+    margin-right: 0px;
+    font-size: 30px;
+    color: black;
+    
+}
+
+ h2 {
+    color: black;
+    font-size: large;
+    
+}
+
+section {
+    padding: 20px;
+    background-color: #f5f9ff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+
+section div p {
+    color: black;
+    margin-right: 200px;
+    font-size: 20px;
+}
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: white;
+ }
+
+div {
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+    }
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+ 
+    
+    
+nav ul a { 
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    transition: 0.3s;
+    font-size: 16px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 700;
+
+}
+
+nav ul a:hover {
+    color:aqua;
+}
+
+    
+div button {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    transition: 0,3s;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+div button:hover {
+    color:aquamarine; 
+
+}
+
+.wave {
+    width: 100%;
+    overflow: hidden;
+    line-height: 10;
+}
+
+
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background: #0073e6;
+    color: white;
+}
+ 
+p { 
+    margin-right: 20px;
+}
+
+ li {
+    margin-right: 20px;
+ }
+
+ html {  
+   scroll-behavior: smooth;
+ }
+ 
+ .about-section {
+    padding: 60px 20px;
+    background-color: #f5f9ff;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.about-section p, p2, ul {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+
+
