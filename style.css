@@ -6,6 +6,9 @@ body {
     background: color black;
 }
 
+.logo, h5, h3, h2 {
+    animation: slideUp 1s ease-out forwards;
+} 
 
 h1 {
     margin-right: 0px;
@@ -223,4 +226,14 @@ p {
     text-align: center;
     color: blue;
     font-size: 2em; 
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
