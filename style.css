@@ -162,5 +162,65 @@ p {
     
 }
 
+ .experience-section {
+    
+    background-color: #f5f9ff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.experience-section h3 {
+    color: blue;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h4 {
+    font-size: 1em;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.experience-item p3 {
+    font-size: large;
+    
+}
+
+.experience-item ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+.experience-item ul li {
+    font: size 0.1em;
+    font-size: 15px;
+    margin-bottom: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+.contact-section form {
+    font-weight: bolder;
+    text-align: center;
+}
 
 
+
+.contact-section h5 {
+    text-align: center;
+    color: blue;
+    font-size: 2em; 
+}
