@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Coral+Pixels&display=swap');
+            </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title> Projects </title>
+        <link rel="stylesheet" href="style.css">
+         
+    </head>
+
+    <body>
+
+        <h6> Projects </h6>
+
+        <div class="project-card">
+            <div class="project-header">
+                <h3>Vehicle Rental Agency System</h3>
+                <span class="tech-tag">Java</span>
+            </div>
+            <p class="project-desc">
+                An object-oriented application designed to manage fleet inventory and customer rental lifecycles. Features a pricing engine for tiered rates and role-based workflows for employees and managers.
+            </p>
+            <div class="project-links">
+                <a href="link-to-your-code" class="btn-secondary">View Core Logic</a> 
+                <a href="https:github.com/aminataj11/vehicle-rental-agency" class="btn-primary">View on GitHub</a>
+            </div>
+        </div>
+    
+
+    <div class="project-card">
+        <h3 class="project-title">Personal Portfolio Architecture</h3>
+        <span class="tech-tag">HTML/CSS/VSCode</span>
+        
+        <p class="project-desc">
+            A custom-built, responsive professional platform designed to showcase technical 
+            capabilities. Engineered with a focus on clean typography, modular CSS, 
+            and optimized UI/UX for employer engagement.
+        </p>
+    
+        <div class="project-links">
+             <a class="view-logic" onclick="openModal('cssModal')">View CSS Style Example </a>
+            <a href="https://github.com/aminataj11/aminata-diallo-portfolio" class="view-github">View on GitHub</a>
+        </div>
+    </div>
+    <div class="project-card">
+        <h3 class="project-title">User Authentication Gateway</h3>
+        <span class="tech-tag">Python</span>
+
+        
+        <p class="project-desc">
+            A backend authentication system that manages user registration and secure 
+            login protocols. Demonstrates proficiency in data structures (Dictionaries), 
+            conditional authentication, and secure access logic.
+        </p>
+    
+        <div class="project-links">
+            <a class="view-logic" onclick="openModal('pythonModal')">View Auth Logic </a> 
+            <a href=https://github.com/aminataj11/login-authentication-gateway class="view-github">View on GitHub</a> 
+
+        </div>
+    </div>
+    <div id="pythonModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('pythonModal')">&times;</span>
+            <h2 style="color: #007bff;">Python: User Auth Logic</h2>
+            <hr>
+            <pre><code>
+                print("----Welcome! Sign in or Register Now---")
+
+                users_db = {}
+                
+                def register():
+                    username = input("Create a username: ")
+                    password = input("Create a password: ")
+                    users_db[username] = password
+                    print("Registration successful!\n")
+                
+                def login():
+                    username = input("Enter username: ")
+                    password = input("Enter password: ")
+                    
+                    
+                    if username in users_db and users_db[username] == password:
+                        print(f"Welcome back, {username}! Access Granted.\n")
+                    else:
+                        print("Invalid credentials. Access Denied.\n")
+                
+                
+                while True:
+                    choice = input("1. Register\n2. Login\n3. Exit\nChoose an option: ")
+                    if choice == '1':
+                        register()
+                    elif choice == '2':
+                        login()
+                    elif choice == '3':
+                        break
+                
+            </code></pre>
+        </div>
+    </div>
+    <div id="cssModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('cssModal')">&times;</span>
+            <h2 style="color: #0056b3;">Project Section Architecture</h2>
+            <hr>
+            <p style="font-size: 14px; color: #666;">Character & Interactive Display and Spacing </p>
+            <pre><code>
+    
+                .project-card {
+                    background: white;
+                    max-width: 1200px;
+                    border-radius: 12px;
+                    padding: 30px;
+                    margin: 0 auto;
+                    transition: 0.3s;
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: bolder;
+                }
+                
+                .project-card:hover {
+                    border-color: #007bff; 
+                    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
+                }
+                
+            </code></pre>
+        </div>
+    </div>
+    </body>
+
+    
+<script>
+// Function to show the modal
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+// Function to hide the modal
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+// Close modal if user clicks anywhere outside of the white box
+window.onclick = function(event) {
+    if (event.target.className === 'modal') {
+        event.target.style.display = "none";
+    }
+}
+</script>
+
+    
